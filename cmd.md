@@ -1,0 +1,45 @@
+docker pull <name> : Check if it is present else download and runs it.
+
+docker run -it <name> : To run.
+(it = Iteractive, gives you terminal of resp. OS image)
+
+docker run -p <port>:<port> <name> : To run
+
+docker build -t <name> <path> : To build the image
+
+docker run -p <port>:<port> -v "$(pwd):/app" -v /app/node_modules <name> : To run and mount the current working directory.
+
+(This links the local code to running container and local changes are relfected to us.)
+(pwd = Represents current working directory)
+(v = Volume, Keep tracks of all the changes)
+
+docker images : Gives you a list of Docker images
+
+docker run -it <name> sh : To run.
+(it = Iteractive, gives you terminal of resp. OS image. 
+'sh' starts an interactive shell session inside the container.)
+
+docker ps : Gives you the list of containers that are running.
+
+docker ps -a : Gives you the list of all containers.
+
+docker stop <first 3 letters of container ID> / <container name> : Stops the container.
+(If you get the same 3 letters means is successfully stopped)
+
+docker container prune : Remove all stop containers.
+
+docker rm <first 3 letters of container ID> / <container name> : Removes the specific container.
+
+(docker rm <name> --force : To forcefully remove) 
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Publish Docker Images:
+1. docker login
+
+2. docker tag <name> <username>/<name>
+
+3. docker push <username>/<name>
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------
