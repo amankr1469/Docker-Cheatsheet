@@ -1,0 +1,1 @@
+This repository provides Docker configurations and setup for deploying both a React frontend and a MERN (MongoDB, Express.js, React.js, Node.js) stack application. Docker simplifies the process of containerization and deployment, ensuring consistency across different environments.
