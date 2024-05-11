@@ -43,3 +43,10 @@ docker rm <first 3 letters of container ID> / <container name> : Removes the spe
 
 
 ------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Docker Compose: 
+1. docker init : Creates all necessary workspace.
+
+2. docker compose up : To build and run.
+
+   docker compose watch : Watches the changes done locally all the time and update docker container.
